@@ -5,10 +5,10 @@ from random import randint
 
 
 def experimental1(n):
-    summary = 0
+    sum = 0
     for i in range(n):
-        summary += randint(1, 6)
-    return summary
+        sum += randint(1, 6)
+    return sum
 
 
 # tests
