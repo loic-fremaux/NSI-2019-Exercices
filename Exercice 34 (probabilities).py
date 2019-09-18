@@ -5,6 +5,12 @@ from random import randint
 
 
 def experimental1(n):
+    """
+    get sum of n dice rolls result
+
+    :param n: number of dice rolls
+    :return: the sum of dice rolls result
+    """
     sum = 0
     for i in range(n):
         sum += randint(1, 6)
@@ -18,6 +24,12 @@ print("Pour " + str(tries) + " lancers, on obtient " + str(experimental1(tries))
 
 # 3.
 def experimental2(n):
+    """
+    get the amount of 1 in n dice rolls
+
+    :param n: number of dice rolls
+    :return: the amount of occurrences for number 1
+    """
     result_is_one = 0
     for i in range(n):
         if randint(1, 6) == 1:
